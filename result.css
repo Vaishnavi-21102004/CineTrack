@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Mozilla Headline", sans-serif;
+    color: white;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.result-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+}
+
+.img-container{
+    height: 100%;
+    width: 35vw;
+    background-color: red;
+    position: relative;
+}
+
+.img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top,black,#000000ae,transparent);
+}
+
+.info-section{
+    height: 100%;
+    width: 60vw;
+    padding: 10px;
+    padding: 20px;
+}
+
+.movie-name{
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.movie-name h2{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.movie-name h2 span{
+    font-size: 0.5em;
+}
+
+.plot{
+    font-size: 1em;
+    color: gray;
+}
+
+.hr-line{
+    margin-top: 20px;
+    height: 0.1px;
+}
+
+.main-info{
+    font-size: 1.5em;
+    color: #d7d4d4;
+    margin-top: 30px;
+}
